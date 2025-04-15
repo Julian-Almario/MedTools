@@ -19,36 +19,38 @@ def calculadoras():
     print("-----------------------------")
 
     nav = int(input("=> "))
+    
+#Liquidos en paciente quemado
     peso = 0
     holliday = 0
     parklnd = 0
-
     if nav == 2:
         peso = int(input("Peso(Kg): "))
         acq = int(input("ACQ: "))
 
         if peso < 10:
             holliday = peso * 100
-            print(holliday)
 
         elif peso > 11 and peso < 20:
             val = (peso - 10) * 50  
             holliday = 1000 + val
-            print(holliday)
 
         else:
             val = (peso - 20) * 20
             holliday = 1500 + val
-            print(holliday)
-
 
         parkland = (((4 * peso) * acq) + holliday) / 2
+        
+        solu1 = parkland / 8
+        solu2 = parkland / 16
 
-        print("pasar en 8 horas")
-        print(parkland)
+        #Solucion
+        print(f"Pasar {solu1}cc/hora de harmant o SS 0,9% por 8 horas, y {solu2}cc/hora por 16 horas")
 
-        print("pasar en 16 horas")
-        print(parkland)
+
+# Administracion de liquidos
+
+
 
 
 calculadoras()
