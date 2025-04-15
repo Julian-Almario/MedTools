@@ -1,7 +1,5 @@
 import os
 
-
-
 def herramientas():
     print("1. Salir")
     print("2. Calculadoras")
@@ -20,6 +18,8 @@ def calculadoras():
         
         if nav == 1:
             break
+
+
 #Liquidos en paciente quemado
         peso = 0
         holliday = 0
@@ -38,13 +38,19 @@ def calculadoras():
             val = (peso - 20) * 20
             holliday = 1500 + val
 
-        parkland = (((4 * peso) * acq) + holliday) / 2
-        
-        solu1 = parkland / 8
-        solu2 = parkland / 16
+        # parkland = (((4 * peso) * acq) + holliday) / 2
+        park1 = 4 * peso
+        park2 = park1 * acq
+        park3 = park2 + holliday
+        park4 = park3 / 2
+
+        solu1 = park4 / 8
+        solu2 = park4 / 16
 
         #Solucion
         print(f"Pasar {solu1}cc/hora de harmant o SS 0,9% por 8 horas, y {solu2}cc/hora por 16 horas")
+        print("SOLUCION")
+        print(f"4 * {peso} = {park1} * {acq} = {park2} + {holliday} = {park3} / 2 = {park4}")
         print("-------------------")
         cont = input("* Para continuar: ")
         if cont == "*":
@@ -60,7 +66,7 @@ def main():
         navgen = 0
 
         herramientas()
-        navgen = int(input("=>"))
+        navgen = int(input("=> "))
 
         if navgen == 1:
             break
