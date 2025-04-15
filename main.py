@@ -1,33 +1,32 @@
 import os
 
+
+
 def herramientas():
-    print("1. Calculadoras")
-    print("2. Farmacologia Pediatria/Adultos")
+    print("1. Salir")
+    print("2. Calculadoras")
     print("3. Criterios clinicos")
     print("4. Ayudas diagnosticas")
-    print("0. Salir")
+    print("5. Farmacologia pediatria/adultos")
     print("-----------------------------")
-
-
-
-
-
 
 def calculadoras():
-    print("1. Salir")
-    print("2. Liquidos en paciente quemado")
-    print("-----------------------------")
-
-    nav = int(input("=> "))
+    while True:
+        print("1. Salir")
+        print("2. Liquidos en paciente quemado")
+        print("-----------------------------")
     
+        nav = int(input("=> "))
+        
+        if nav == 1:
+            break
 #Liquidos en paciente quemado
-    peso = 0
-    holliday = 0
-    parklnd = 0
-    if nav == 2:
-        peso = int(input("Peso(Kg): "))
-        acq = int(input("ACQ: "))
-
+        peso = 0
+        holliday = 0
+        parklnd = 0
+        if nav == 2:
+            peso = int(input("Peso(Kg): "))
+            acq = int(input("ACQ: "))
         if peso < 10:
             holliday = peso * 100
 
@@ -46,11 +45,27 @@ def calculadoras():
 
         #Solucion
         print(f"Pasar {solu1}cc/hora de harmant o SS 0,9% por 8 horas, y {solu2}cc/hora por 16 horas")
-
-
+        print("-------------------")
+        cont = input("* Para continuar: ")
+        if cont == "*":
+            continue
+        else:
+            break
 # Administracion de liquidos
 
 
+def main():
+
+    while True:
+        navgen = 0
+
+        herramientas()
+        navgen = int(input("=>"))
+
+        if navgen == 1:
+            break
+        elif navgen == 2:
+            calculadoras()
 
 
-calculadoras()
+main()
