@@ -67,11 +67,37 @@ def calculadoras():
 
             peso = 0
             holliday = 0
+            correcciondeficit = 0
+            timexbolo = 0
 
             peso = int(input("Peso(Kg): "))
+            gradoshok = int(input("Grado de deficit: "))
+            #Correccion de deficit de liquidos
+            #Paciente menor de 12kg
+            if peso < 12 and gradoshok == 1:
+                timexbolo = 2
+                bolo = (peso * 50) / timexbolo
+            elif peso < 12 and gradoshok == 2:
+                timexbolo == 4
+                bolo = (peso * 100) / timexbolo
+            elif peso < 12 and gradoshok == 3:
+                timexbolo == 6
+                bolo = (peso * 150) / timexbolo
 
-            bolo = peso * 10
+            #Paciente que mayor de 12kg
+            elif peso > 12 and gradoshok == 1:
+                timexbolo = 2
+                bolo = (peso * 30) / timexbolo
+            elif peso > 12 and gradoshok == 2:
+                timexbolo = 4
+                bolo = (peso * 60) / timexbolo
+            elif peso > 12 and gradoshok == 3:
+                timexbolo = 6
+                bolo = (peso * 90) / timexbolo
+                
 
+
+            #Liquidos de manteniento
             if peso < 10:
                 holliday = peso * 100
             elif peso > 11 and peso < 20:
@@ -83,7 +109,7 @@ def calculadoras():
 
             hollidayxhora = holliday / 24
 
-            print(f"Administrar bolo de {bolo}cc en 4 hora")
+            print(f"Administrar bolo de lactato o SS a 0,9% a {bolo}cc/Hora en {timexbolo} horas")
             print(f"administrar {hollidayxhora}cc/Hora hasta 24 horas")
             #break
             cont = input("* Para continuar: ")
