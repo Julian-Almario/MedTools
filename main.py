@@ -70,6 +70,8 @@ def calculadoras():
 
             peso = int(input("Peso(Kg): "))
 
+            bolo = peso * 10
+
             if peso < 10:
                 holliday = peso * 100
             elif peso > 11 and peso < 20:
@@ -80,14 +82,16 @@ def calculadoras():
                 holliday = 1500 + val
 
             hollidayxhora = holliday / 24
+
+            print(f"Administrar bolo de {bolo}cc en 4 hora")
             print(f"administrar {hollidayxhora}cc/Hora hasta 24 horas")
-            
             #break
             cont = input("* Para continuar: ")
             if cont == "*":
                 continue
             else:
                 break
+
 
 def main():
 
