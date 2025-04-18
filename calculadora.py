@@ -3,6 +3,7 @@ import os
 def calculadoras():
     os.system("clear")
     while True:
+        nav = 0
         print("1. Salir")
         print("2. Liquidos en paciente quemado")
         print("3. Liquidos en general")
