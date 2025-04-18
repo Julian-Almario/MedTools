@@ -1,15 +1,16 @@
+from paraclinicos import hemograma
 import os
-
 
 def herramientas():
     print("1. Salir")
     print("2. Calculadoras")
-    print("3. Criterios clinicos")
+    print("3. Hemograma")
     print("4. Ayudas diagnosticas")
     print("5. Farmacologia pediatria/adultos")
     print("-----------------------------")
 
 def calculadoras():
+    os.system("clear")
     while True:
         print("1. Salir")
         print("2. Liquidos en paciente quemado")
@@ -20,6 +21,7 @@ def calculadoras():
         nav = int(input("=> "))
         
         if nav == 1:
+            os.system("clear")
             break
 
 #Liquidos en paciente quemado
@@ -58,9 +60,12 @@ def calculadoras():
             #break
             cont = input("* Para continuar: ")
             if cont == "*":
+                os.system("clear")
                 continue
             else:
+                os.system("clear")
                 break
+
 
 # Administracion de liquidos holliday
         if nav == 3:
@@ -120,7 +125,7 @@ def calculadoras():
 
 
 def main():
-
+    os.system("clear")
     while True:
         navgen = 0
 
@@ -131,6 +136,6 @@ def main():
             break
         elif navgen == 2:
             calculadoras()
-
-
+        elif navgen == 3:
+            hemograma()
 main()
