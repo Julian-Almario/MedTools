@@ -7,6 +7,7 @@ def calculadoras():
         print("1. Salir")
         print("2. Liquidos en paciente quemado")
         print("3. Liquidos en general")
+        print("4. Calculo de dosis Norepinefrina")
         print("-----------------------------")
 
         cont = "o"
@@ -107,6 +108,23 @@ def calculadoras():
             print(f"Administrar bolo de lactato o SS a 0,9% a {bolo}cc/Hora en {timexbolo} horas")
             print(f"administrar {hollidayxhora}cc/Hora hasta 24 horas")
             #break
+            cont = input("* Para continuar: ")
+            if cont == "*":
+                continue
+            else:
+                break
+        # Norepinefrina
+
+        if nav == 4:
+            peso = int(input("Peso(kg): "))
+            SSA = int(input("Cuantos cc de solucion 250 o 500 cc: "))
+            ampollas = int(input("Ampollas: "))
+
+            ccnor = ampollas * 4
+            norepi = ((0.05 * peso) * (SSA + ccnor) / 4000) * 60
+
+            print(f"Diluir {ampollas} ampollas de norepinefrina en {SSA}cc Solucion salina al 0,9% y pasar en infusion a {norepi}cc/h ")
+
             cont = input("* Para continuar: ")
             if cont == "*":
                 continue
