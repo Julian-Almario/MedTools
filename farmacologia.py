@@ -13,9 +13,11 @@ def tratamiento():
             os.system("clear")
             break
 
-#
+
         if nav == 2:
-            print("Si paciente es < 1 año inserta * ")
-            meseoaños = int(input("=> "))
-            edad = int(input("=> "))
-            peso = int
+            peso = int(input("Peso(Kg): "))
+
+            amikacina = peso * 15
+
+            print(f"Amikacina {amikacina}mg/24horas")
+
