@@ -17,7 +17,8 @@ def main():
 
         herramientas()
         navgen = int(input("=> "))
-
+        
+        #Menu principal
         if navgen == 1:
             os.system("clear")
             break

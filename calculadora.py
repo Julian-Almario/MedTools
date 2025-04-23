@@ -1,8 +1,22 @@
 import os
 
+main = True
+#Funcion de salir
+def salir():
+    cont = input("* Para continuar: ")
+    if cont == "*":
+        os.system("clear")
+        main = True
+    else:
+        os.system("clear")
+        main = False
+
 def calculadoras():
     os.system("clear")
     while True:
+
+
+
         nav = 0
         print("1. Salir")
         print("2. Liquidos en paciente quemado")
@@ -17,12 +31,12 @@ def calculadoras():
             os.system("clear")
             break
 
-#Liquidos en paciente quemado
+        #Liquidos en paciente quemado
         if nav == 2:
             peso = 0
             holliday = 0
         
-        #Variables a usar en parkland
+            #Variables a usar en parkland
             peso = int(input("Peso(Kg): "))
             acq = int(input("ACQ: "))
 
@@ -35,7 +49,7 @@ def calculadoras():
                 val = (peso - 20) * 20
                 holliday = 1500 + val
 
-        # parkland = (((4 * peso) * acq) + holliday) / 2
+            #parkland = (((4 * peso) * acq) + holliday) / 2
             park1 = 4 * peso
             park2 = park1 * acq
             park3 = park2 + holliday
@@ -44,20 +58,14 @@ def calculadoras():
             solu1 = park4 / 8
             solu2 = park4 / 16
 
-        #Solucion
+            #Solucion
             print(f"Pasar {solu1}cc/hora de harmant o SS 0,9% por 8 horas, y {solu2}cc/hora por 16 horas")
             print("SOLUCION")
             print(f"4 * {peso} = {park1} * {acq} = {park2} + {holliday} = {park3} / 2 = {park4}")
             print("-------------------")
             
             #break
-            cont = input("* Para continuar: ")
-            if cont == "*":
-                os.system("clear")
-                continue
-            else:
-                os.system("clear")
-                break
+            salir()
 # Administracion de liquidos holliday
         if nav == 3:
 
@@ -107,12 +115,9 @@ def calculadoras():
 
             print(f"Administrar bolo de lactato o SS a 0,9% a {bolo}cc/Hora en {timexbolo} horas")
             print(f"administrar {hollidayxhora}cc/Hora hasta 24 horas")
-            #break
-            cont = input("* Para continuar: ")
-            if cont == "*":
-                continue
-            else:
-                break
+            
+            salir()
+
         # Norepinefrina
 
         if nav == 4:
@@ -125,8 +130,4 @@ def calculadoras():
 
             print(f"Diluir {ampollas} ampollas de norepinefrina en {SSA}cc Solucion salina al 0,9% y pasar en infusion a {norepi}cc/h ")
 
-            cont = input("* Para continuar: ")
-            if cont == "*":
-                continue
-            else:
-                break
+            salir()
