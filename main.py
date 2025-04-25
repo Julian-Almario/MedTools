@@ -1,4 +1,4 @@
-from paraclinicos import hemograma
+#from paraclinicos import hemograma
 from calculadora import calculadoras
 from farmacologia import tratamiento
 import os
