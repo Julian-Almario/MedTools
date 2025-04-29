@@ -1,6 +1,6 @@
-# from paraclinico import paraclinicos
-from calculadora import calculadoras
-from farmacologia import tratamiento
+from modules.para import paraclinicos
+from modules.cal import calculadoras
+from modules.meds import tratamiento
 import os
 
 def herramientas():
