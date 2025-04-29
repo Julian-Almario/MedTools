@@ -1,8 +1,11 @@
-# MedTools
+<div align="center">
+    <img width="600" src="src/banner.png" />
+<p align="center">A Python-Based Terminal Application for Medical Practice.</p>
+<div align="left">
 
-Aplicacion de terminal escrita en python calcular y buscar y tener informacion rapida en una base de datos para la practica medica.
+MedTools is a lightweight terminal application written in Python, designed to perform calculations, search, and quickly retrieve information from a structured database to support medical practice.
 
-Esta aplicacion tienw como objetivo ser versatil y funcional, para tener solo informacion concreta y de calidad a la mano,lo necesario y sin distracciones.
+The goal of this application is to offer a versatile and efficient tool, providing concise, high-quality information — just what is necessary, with no distractions.
 
-Orientada mas que todo para uso personal y de aprendizaje, en caso de que la quieras implementar en tu dia a dia si eres personal de la salud, usa termux.
+While primarily intended for personal use and educational purposes, MedTools can also be incorporated into daily workflows by healthcare professionals. For mobile use, it is recommended to run it through Termux.
 
