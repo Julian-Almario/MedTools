@@ -1,4 +1,4 @@
-#from paraclinicos import hemograma
+from paraclinicos import paraclinicos
 from calculadora import calculadoras
 from farmacologia import tratamiento
 import os
@@ -25,7 +25,7 @@ def main():
         elif navgen == 2:
             calculadoras()
         elif navgen == 3:
-            hemograma()
+            paraclinicos()
         elif navgen == 4:
             tratamiento()
 
