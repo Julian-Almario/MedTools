@@ -1,7 +1,7 @@
-from modules.para import paraclinicos
-from modules.cal import calculadoras
-from modules.meds import tratamiento
-import os
+from modules.para import Paraclinicos
+from modules.cal import Calculadoras
+from modules.meds import Tratamiento
+from modules.menu import Clean
 
 def herramientas():
     print("1. Salir")
@@ -11,7 +11,7 @@ def herramientas():
     print("-----------------------------")
 
 def main():
-    os.system("clear")
+    Clean()
     while True:
         navgen = 0
 
@@ -20,14 +20,14 @@ def main():
         
         #Menu principal
         if navgen == 1:
-            os.system("clear")
+            Clean()
             break
         elif navgen == 2:
-            calculadoras()
+            Calculadoras()
         elif navgen == 3:
-            paraclinicos()
+            Paraclinicos()
         elif navgen == 4:
-            tratamiento()
+            Tratamiento()
 
 
 main()
