@@ -1,16 +1,10 @@
-import os
+from modules.menu import Exit,Clean
 import json
 
 with open('db/farmacologia.json', 'r', encoding='utf-8') as file:
-    medicamentos = json.load(file)
+    Med = json.load(file)
 
-def tratamiento():
-    print(medicamentos[0]['nombre'])
-    print(medicamentos[0]['dosis'])
-    print(medicamentos[0]['via_administracion'])
-    print(medicamentos[0]['frecuencia'])
-    print(medicamentos[0]['indicaciones'])
-
+def Tratamiento():
     while True:
         nav = 0
         print("1. Salir")
@@ -20,14 +14,16 @@ def tratamiento():
         nav = int(input("=> "))
 
         if nav == 1:
-            os.system("clear")
+            Clean()
             break
 
 
         if nav == 2:
             peso = int(input("Peso(Kg): "))
 
-            amikacina = peso * 15
+            amikacina = Med["ITU_pediatrica"]["Amikacina"]["dosis"] * peso
 
-            print(f"Amikacina {amikacina}mg/24horas")
+            print(f"Amikacina {amikacina}mg/24horas por {Med["ITU_pediatrica"]["Amikacina"]["duracion"]}")
+            
+            Exit()
 
