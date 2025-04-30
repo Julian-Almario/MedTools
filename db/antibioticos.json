@@ -1,0 +1,9 @@
+[
+    {
+        "nombre": "Paracetamol",
+        "dosis": "500 mg",
+        "via_administracion": "Oral",
+        "frecuencia": "Cada 8 horas",
+        "indicaciones": "Alivio del dolor leve a moderado y fiebre"
+    }
+]
