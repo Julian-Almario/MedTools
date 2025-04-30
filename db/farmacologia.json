@@ -1,0 +1,71 @@
+{
+    "ITU_pediatrica": {
+      "Amoxicilina-ácido_clavulánico": {
+        "nombre": "Amoxicilina-ácido_clavulánico",
+        "via": "oral",
+        "dosis": 40,
+        "medida": "mg/kg/día",
+        "cadacuanto": 8,
+        "time": "Horas",
+        "duracion": "7-10 días",
+        "comentario": "Opción común en ITU no complicada; cubre gérmenes productores de beta-lactamasas"
+      },
+      "Cefixima": {
+        "nombre": "Cefixima",
+        "via": "oral",
+        "dosis": 8,
+        "medida": "mg/kg/día",
+        "cadacuanto": 24,
+        "time": "Horas",
+        "duracion": "7-10 días",
+        "comentario": "Buena opción oral para ITU alta en pacientes ambulatorios"
+      },
+      "Ceftriaxona": {
+        "nombre": "Ceftriaxona",
+        "via": [
+          "intramuscular",
+          "intravenosa"
+        ],
+        "dosis": 75,
+        "medida": "mg/kg/día",
+        "cadacuanto": 24,
+        "time": "Horas",
+        "duracion": "3-7 días",
+        "comentario": "Utilizado en casos moderados a graves o cuando no se tolera la vía oral"
+      },
+      "Nitrofurantoína": {
+        "nombre": "Nitrofurantoína",
+        "via": "oral",
+        "dosis": 7,
+        "medida": "mg/kg/día",
+        "cadacuanto": 6,
+        "time": "Horas",
+        "duracion": "7 días",
+        "comentario": "Solo para ITU baja (cistitis); no usar en pielonefritis ni en lactantes menores de 3 meses"
+      },
+      "Trimetoprim-sulfametoxazol": {
+        "nombre": "Trimetoprim-sulfametoxazol",
+        "via": "oral",
+        "dosis": 10,
+        "medida": "mg/kg/día de trimetoprim",
+        "cadacuanto": 12,
+        "time": "Horas",
+        "duracion": "7-10 días",
+        "comentario": "Alternativa útil en ITU no complicada, si no hay resistencia local elevada"
+      },
+      "Amikacina": {
+        "nombre": "Amikacina",
+        "via": [
+          "intramuscular",
+          "intravenosa"
+        ],
+        "dosis": 15,
+        "medida": "mg/kg/día",
+        "cadacuanto": 24,
+        "time": "Horas",
+        "duracion": "3-7 días",
+        "comentario": "Indicada en pielonefritis grave o sospecha de bacterias resistentes; requiere monitoreo renal y de niveles"
+      }
+    }
+  }
+  

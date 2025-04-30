@@ -1,18 +1,18 @@
 from rich.console import Console
 from rich.table import Table
-from modules.exit import salir
+from modules.menu import Exit,Clean
 import os
 
-def paraclinicos ():
+def Paraclinicos():
     while True:
         nav = 0
-        print("1.salir")
+        print("1.Salir")
         print("2.Hemograma (Adultos)")
         nav = int(input("=> "))
 
         if nav == 1:
+            Clean()
             break
-            os.system("clear")
         elif nav == 2:
             # Crear consola
             console = Console()
@@ -41,5 +41,5 @@ def paraclinicos ():
             # Mostrar la tabla
             console.print(table)
 
-            salir()
+            Exit()
 

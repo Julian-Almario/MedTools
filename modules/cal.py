@@ -1,11 +1,10 @@
-from modules.exit import salir
-import os
+from modules.menu import Exit,Clean
 
 main = True
 #Funcion de salir
 
-def calculadoras():
-    os.system("clear")
+def Calculadoras():
+    Clean()
     while True:
 
         nav = 0
@@ -19,7 +18,7 @@ def calculadoras():
         nav = int(input("=> "))
         
         if nav == 1:
-            os.system("clear")
+            Clean()
             break
 
         #Liquidos en paciente quemado
@@ -56,7 +55,7 @@ def calculadoras():
             print("-------------------")
             
             #break
-            salir()
+            Exit()
 # Administracion de liquidos holliday
         if nav == 3:
 
@@ -107,7 +106,7 @@ def calculadoras():
             print(f"Administrar bolo de lactato o SS a 0,9% a {bolo}cc/Hora en {timexbolo} horas")
             print(f"administrar {hollidayxhora}cc/Hora hasta 24 horas")
             
-            salir()
+            Exit()
 
         # Norepinefrina
 
@@ -121,4 +120,4 @@ def calculadoras():
 
             print(f"Diluir {ampollas} ampollas de norepinefrina en {SSA}cc Solucion salina al 0,9% y pasar en infusion a {norepi}cc/h ")
 
-            salir()
+            Exit()
