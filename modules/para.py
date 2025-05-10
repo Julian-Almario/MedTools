@@ -5,9 +5,10 @@ import os
 
 def Paraclinicos():
     while True:
-        nav = 0
-        print("1.Salir")
-        print("2.Hemograma (Adultos)")
+        para = ["1. Salir","2.Hemograma (Adultos)","----------------------"]
+        for i in para:
+            print(i)
+            
         nav = int(input("=> "))
 
         if nav == 1:

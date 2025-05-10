@@ -4,11 +4,10 @@ from modules.meds import Tratamiento
 from modules.menu import Clean
 
 def herramientas():
-    print("1. Salir")
-    print("2. Calculadoras")
-    print("3. Hemograma")
-    print("4. Farmacologia pediatria/adultos")
-    print("-----------------------------")
+    herra = ["1. Salir","2. Calculadoras","3. Hemograma","4. Farmacologia pediatria/adultos", "----------------------"]
+    for i in herra:
+        print(i)
+
 
 def main():
     Clean()

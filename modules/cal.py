@@ -7,14 +7,10 @@ def Calculadoras():
     Clean()
     while True:
 
-        nav = 0
-        print("1. Salir")
-        print("2. Liquidos en paciente quemado")
-        print("3. Liquidos en general")
-        print("4. Calculo de dosis Norepinefrina")
-        print("-----------------------------")
+        cal = ["1. Salir","2. Liquidos en paciente quemado","3. Liquidos en general","4. Calculo de dosis Norepinefrina","----------------------"]
+        for i in cal:
+            print(i)
 
-        cont = "o"
         nav = int(input("=> "))
         
         if nav == 1:

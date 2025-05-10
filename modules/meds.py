@@ -6,10 +6,10 @@ with open('db/farmacologia.json', 'r', encoding='utf-8') as file:
 
 def Tratamiento():
     while True:
-        nav = 0
-        print("1. Salir")
-        print("2. ITU")
-        print("-----------------------------")
+        
+        med = ["1. Salir","2. ITU","----------------------"]
+        for i in med:
+            print(i)
 
         nav = int(input("=> "))
 
